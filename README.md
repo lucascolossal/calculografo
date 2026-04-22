@@ -1,49 +1,44 @@
 # Calculógrafo
 
-Calculadora de precificação para fotografia freelance.
+Precificar trabalho fotográfico é, via de regra, um exercício de chute. 
+O Calculógrafo existe para mudar isso.
 
-Desenvolvida por um fotógrafo que passou anos cobrando errado.
+Desenvolvido por um fotógrafo freelancer que cansou de cobrar no feeling,
+o sistema traduz variáveis reais do trabalho — esforço, logística, urgência 
+e mercado local — num cálculo replicável. Você responde as perguntas, 
+ele faz a matemática.
 
----
+## Como funciona
 
-## O problema
+O sistema pergunta sobre a proposta e aplica modificadores em cascata 
+sobre um valor-hora base:
 
-Fotógrafos iniciantes e intermediários precificam por intuição, comparação ou insegurança. O resultado é subvalorização do trabalho, inconsistência nos valores cobrados e perda de poder de negociação.
-
-## O que faz
-
-Transforma variáveis reais do trabalho fotográfico em um valor coerente e justificável, reduzindo a incerteza na hora de fechar um contrato.
-
-## Variáveis consideradas
-
-- Modelo de cobrança: valor fechado ou por hora
-- Horas de captura e horas de edição
-- Nível de inserção no mercado (0 a 10)
-- Distância do trabalho (P / M / G)
-- Urgência do prazo de entrega (P / M / G)
-- Fator emocional e desgaste do trabalho
-- Teto de segurança para evitar valores fora da realidade do mercado
+- Horas de campo (captura) e horas de ateliê (edição) têm pesos diferentes
+- Distância até o local ajusta o valor (P/M/G)
+- Urgência na entrega tem custo
+- Trabalho chato também tem custo
+- Nível de inserção no mercado local (0-10) calibra o valor-hora base
+- Um teto de segurança evita que a combinação de fatores gere um número 
+  fora da realidade comercial e você perca o contrato
 
 ## Como usar
+
+Execute no terminal com Python 3 e responda as perguntas.
 
 ```bash
 python calculografo.py
 ```
 
-Preencha os dados solicitados no terminal. O sistema calcula e exibe o orçamento sugerido.
+## Roadmap
 
-## Status
-
-**v0.1 — funcional via terminal**
-
-- [x] Motor de cálculo com modificadores em cascata
-- [x] Teto de segurança
-- [ ] Variável de disponibilidade (prazo até o evento)
-- [ ] Refinamento dos pesos com base em testes reais
-- [ ] Interface mais amigável
+- V1 (atual): motor de cálculo por hora via terminal
+- V2: bifurcação para precificação por pacotes fixos
+- V3: validação rigorosa de entradas
+- V4: separação de interface e motor lógico, GUI
 
 ## Autor
 
-Lucas Colossal — Técnico em Informática, fotógrafo freelancer desde 2019, estudante de ADS desde jan/2026.
-
-github.com/lucascolossal
+Lucas Colossal
+Técnico em informática desde 2013. Fotógrafo freelancer desde 2019.
+Estudante de ADS em transição de carreira para TI.
+Este projeto é parte desse processo.
