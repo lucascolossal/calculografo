@@ -1,4 +1,4 @@
-# Calculógrafo
+# Calculógrafo versão alpha 0.1
 
 Calculadora de precificação para fotografia freelance.
 
