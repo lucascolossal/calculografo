@@ -14,7 +14,7 @@ O sistema pergunta sobre a proposta e aplica modificadores em cascata
 sobre um valor-hora base:
 
 - Horas de campo (captura) e horas de ateliê (edição) têm pesos diferentes
-- Distância até o local ajusta o valor (P/M/G)
+- Distância até o local ajusta o valor 
 - Urgência na entrega tem custo
 - Trabalho chato também tem custo
 - Nível de inserção no mercado local (0-10) calibra o valor-hora base
