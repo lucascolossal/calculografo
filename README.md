@@ -32,9 +32,7 @@ python calculografo.py
 ## Roadmap
 
 - V1 (atual): motor de cálculo por hora via terminal
-- V2: bifurcação para precificação por pacotes fixos
-- V3: validação rigorosa de entradas
-- V4: separação de interface e motor lógico, GUI
+- V2: Calculografo API
 
 ## Autor
 
